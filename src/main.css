@@ -1,0 +1,206 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: rgb(28 28 34);
+  overflow-y: hidden;
+}
+
+.navigation {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+  box-shadow: 0px 0px 15px 5px rgb(86, 90, 86);
+}
+
+.brand {
+  font-size: 2em;
+}
+
+.a {
+  background-color: aliceblue;
+}
+
+.hero {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  #plus {
+    font-size: 2.5em;
+  }
+  .nama {
+    font-size: 3em;
+    color: orange;
+  }
+
+  #sub {
+    font-size: 1.2em;
+    color: rgb(210, 201, 201);
+  }
+
+  img {
+    height: 30vw;
+    width: 10vw;
+  }
+
+  img:hover {
+    animation: spin 1s linear infinite;
+  }
+}
+
+.about {
+  min-height: 100vh;
+  margin: auto;
+  justify-content: center;
+
+  .judul {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    max-width: 80%;
+    font-size: 1.2em;
+    align-content: center;
+    line-height: 30px;
+
+    span {
+      color: orange;
+    }
+  }
+}
+
+.project {
+  min-height: 100vh;
+  align-content: center;
+  justify-items: center;
+
+  .mid {
+    display: grid;
+    justify-items: center;
+  }
+
+  .card {
+    margin: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+    box-shadow: 0px 0px 15px 5px rgb(86, 90, 86);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
+    .btn {
+      background-color: orange;
+      border: none;
+      margin-top: 5px;
+      color: white;
+    }
+  }
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah layar */
+  right: 20px; /* Jarak dari kanan layar */
+  padding: 1rem;
+  border: none;
+  border-radius: 50%; /* Membuat tombol bulat */
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  z-index: 1000; /* Agar tombol berada di atas elemen lainnya */
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(86, 90, 86, 1);
+  box-shadow: 0px 0px 15px 5px rgb(86, 90, 86);
+}
+
+.contact {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .main {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .sub {
+    font-size: 1.5em;
+    color: rgb(210, 201, 201);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    background-color: rgba(86, 90, 86, 1);
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    i {
+      font-size: 1.5em;
+      color: orange;
+    }
+  }
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+
+    #head {
+      color: grey;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 840px) {
+  .hero .image {
+    display: none;
+  }
+}
