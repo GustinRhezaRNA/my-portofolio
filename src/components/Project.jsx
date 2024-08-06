@@ -1,7 +1,6 @@
 import apod from '../assets/apod.png';
 import gym from '../assets/gym-app.png';
 
-
 export default function Project() {
   return (
     <div
@@ -17,13 +16,13 @@ export default function Project() {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">Gym Bro</h5>
-              <p className="card-text">Gym advicer app</p>
-              <a 
+              <h1 className="card-title">Gym Bro</h1>
+              <p className="card-text">Generate personalized step-by-step gym workouts tailored to your fitness goals.</p>
+              <a
                 href="https://gym-fit-bro.netlify.app/"
                 className="btn "
               >
-                Live
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
@@ -36,13 +35,13 @@ export default function Project() {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">APOD</h5>
-              <p className="card-text">Astronomy Picture of The Day</p>
+              <h1 className="card-title">APOD</h1>
+              <p className="card-text">Discover a new astronomy image daily with detailed explanations from NASA.</p>
               <a
                 href="https://rheza-apod-app.netlify.app/"
                 className="btn btn-primary"
               >
-                Go somewhere
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
