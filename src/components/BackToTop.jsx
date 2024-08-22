@@ -22,6 +22,6 @@ export default function BackToTop() {
     }
 
   return <div>{backToTop && (
-    <button className='topBtn' onClick={scrollUp}>Top</button>
+    <button className='topBtn' onClick={scrollUp}><i className="fa-solid fa-chevron-up"></i></button>
   )}</div>;
 }
