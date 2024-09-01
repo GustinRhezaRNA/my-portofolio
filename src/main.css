@@ -21,6 +21,55 @@
   background: rgba(255, 255, 255, 0.6); /* Hover effect */
 }
 
+.follow-me {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-me p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl; /* Mengatur teks menjadi vertikal */
+}
+
+.follow-me::before {
+  content: '';
+  width: 1px;
+  height: 150px; /* Sesuaikan tinggi garis dengan kebutuhan */
+  background-color: #fff; /* Warna garis */
+  margin-bottom: 20px;
+}
+
+.follow-me ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.follow-me ul li {
+  margin: 10px 0;
+}
+
+.follow-me ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.follow-me ul li a:hover {
+  color: #00ff00; /* Ganti dengan warna hover yang diinginkan */
+}
+
+
 /* Firefox */
 html {
   scrollbar-width: thin;
@@ -444,5 +493,9 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+  .follow-me{
+    display: none;
   }
 }

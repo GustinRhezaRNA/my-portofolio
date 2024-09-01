@@ -4,8 +4,10 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import BackToTop from './components/BackToTop';
+Socmed
 
 import './main.css';
+import Socmed from './components/Socmed';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +42,7 @@ function App() {
       </div>
       <div className={`main-content ${isLoading ? 'hidden' : 'fade-in'}`}>
         <Header />
+        <Socmed />
         <About />
         <Project />
         <Contact />

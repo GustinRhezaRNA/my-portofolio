@@ -33,7 +33,7 @@ export default function About() {
           <div className="judul animate">About Me</div>
           <p className="isi animate">
             &mdash; My name is Rheza, and I am a computer science student with a keen interest in web development. I am a passionate and dedicated developer, eager to create innovative and efficient solutions. Throughout my studies, I have
-            gained extensive knowledge in <span>HTML, CSS, JavaScript, React, and Express</span> . Each project I have undertaken has offered valuable insights and experiences, shaping me into the developer I am today.
+            gained extensive knowledge in <span>HTML, CSS, JavaScript, React, Bootstrap, Tailwind and Express</span> . Each project I have undertaken has offered valuable insights and experiences, shaping me into the developer I am today.
           </p>
         </div>
       </section>
