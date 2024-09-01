@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import apod from '../assets/a.png';
 import gym from '../assets/b.png';
+import photos from '../assets/photos.png';
 
 export default function Project() {
   const sectionRef = useRef(null);
@@ -42,6 +43,22 @@ export default function Project() {
             <p>Gym Program Generator</p>
             <a
               href="https://gym-fit-bro.netlify.app/"
+              className="quick-view"
+            >
+              Quick View
+            </a>
+          </div>
+        </div>
+        <div className="project-card right d-flex">
+          <img
+            src={photos}
+            className="images"
+            alt="..."
+          />
+          <div className="overlay">
+            <p>Astronomy Picture of the Day</p>
+            <a
+              href="https://our-photos.netlify.app/"
               className="quick-view"
             >
               Quick View
