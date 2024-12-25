@@ -1,4 +1,4 @@
-* {
+body {
   color: white;
 }
 
@@ -66,9 +66,8 @@
 }
 
 .follow-me ul li a:hover {
-  color: #00ff00; /* Ganti dengan warna hover yang diinginkan */
+  color: orange;
 }
-
 
 /* Firefox */
 html {
@@ -91,6 +90,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   z-index: 1000; /* Agar tombol berada di atas elemen lainnya */
+  color: white;
 }
 
 /* Navbar */
@@ -114,6 +114,7 @@ body {
 
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.9); /* Change to semi-transparent */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -220,6 +221,7 @@ header {
     box-sizing: border-box; /* Memastikan padding dan border diperhitungkan */
     padding: 0;
     border: none;
+   
 
     /* animation */
     opacity: 0;
@@ -271,6 +273,10 @@ header {
     color: orange;
     text-decoration: none;
     font-size: 16px;
+  }
+
+  .project-card:hover  {
+    transform: scale(1.1);
   }
 
   .project-card:hover .overlay {
@@ -412,7 +418,8 @@ textarea {
 .contact-info .icon:hover {
   transition: 0.3s;
   color: yellow;
-  padding: 8px 4px 8px 4px;
+  /* padding: 8px 4px 8px 4px; */
+  transform: scale(1.1); /* Perbesar sedikit */
 }
 
 .contact-info span {
@@ -497,7 +504,7 @@ textarea {
     gap: 10px;
   }
 
-  .follow-me{
+  .follow-me {
     display: none;
   }
 }
