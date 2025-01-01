@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import apod from '../assets/a.png';
 import gym from '../assets/b.png';
-import photos from '../assets/photos.png';
+import data from '../assets/data.png';
 import manage from '../assets/manage.png';
 
 export default function Project() {
@@ -36,6 +36,22 @@ export default function Project() {
       <div className="d-flex flex-wrap justify-content-around">
         <div className="project-card left d-flex flex-column">
           <img
+            src={data}
+            className="images"
+            alt="..."
+          />
+          <div className="overlay">
+            <p>Manage Online Inventory Data Handler</p>
+            <a
+              href="https://company-invent.netlify.app/"
+              className="quick-view"
+            >
+              Quick View
+            </a>
+          </div>
+        </div>
+        <div className="project-card left d-flex flex-column">
+          <img
             src={gym}
             className="images"
             alt="..."
@@ -51,7 +67,7 @@ export default function Project() {
           </div>
         </div>
 
-        <div className="project-card right d-flex flex-column">
+        {/* <div className="project-card right d-flex flex-column">
           <img
             src={photos}
             className="images"
@@ -66,7 +82,7 @@ export default function Project() {
               Quick View
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="project-card left d-flex flex-column">
           <img
