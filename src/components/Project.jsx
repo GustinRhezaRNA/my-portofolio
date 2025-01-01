@@ -50,7 +50,7 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="project-card left d-flex flex-column">
+        <div className="project-card right d-flex flex-column">
           <img
             src={gym}
             className="images"

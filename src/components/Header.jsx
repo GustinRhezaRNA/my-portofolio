@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Typewriter from 'typewriter-effect';
 // import logo from '../assets/logo.png';
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 50) {  
+    if (offset > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -91,7 +92,16 @@ export default function Header() {
               <span className="nama">Gustin Rheza </span>
             </p>
             <br />
-            <span id="sub2">Web Enthusiast | Undergraduate Student</span>
+            <Typewriter
+            id="sub2"
+              options={{
+                strings: ['Web Developer Enthusiast', 'Computer Science Student'],
+                autoStart: true,
+                loop: true,
+                delay: 75,
+              }}
+            />
+            {/* <span id="sub2"> | </span> */}
           </div>
           {/* <img
             className="image"

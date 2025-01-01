@@ -1,3 +1,7 @@
+* {
+  cursor: none; /* Sembunyikan kursor default untuk semua elemen */
+}
+
 body {
   color: white;
 }
@@ -17,9 +21,19 @@ body {
   border-radius: 0px; /* Tidak ada border-radius untuk kotak */
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.6); /* Hover effect */
+.custom-cursor {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 94, 0, 0.9);
+  border: 2px solid #ffa500;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
 }
+
 
 .follow-me {
   position: fixed;
@@ -66,7 +80,7 @@ body {
 }
 
 .follow-me ul li a:hover {
-  color: orange;
+  color: #ffa500;
 }
 
 /* Firefox */
@@ -209,7 +223,7 @@ header {
 .project {
   min-height: 100vh;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 3rem auto;
 
   .project-card {
@@ -295,6 +309,13 @@ header {
     transform: translateX(0%);
     filter: blur(0px);
   }
+}
+
+
+#cv .judul {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
 }
 
 /* Contact */
@@ -506,6 +527,22 @@ textarea {
   .follow-me {
     display: none;
   }
+}
+
+/* Skills */
+
+.tech .judul {
+  margin: 3.5rem auto;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+.tech-icon {
+  font-size: 3.5rem;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 426px) {

@@ -4,10 +4,12 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import BackToTop from './components/BackToTop';
-Socmed
+import Skill from './components/Skill';
+import Socmed from './components/Socmed';
+import DownloadSection from './components/CV';
+import CustomCursor from './components/CustomCursor'; // Import CustomCursor
 
 import './main.css';
-import Socmed from './components/Socmed';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,23 +34,32 @@ function App() {
   }, []);
 
   return (
-    <div ref={sectionRef}>
-      <div className="loading-screen">
-        <div className="text-container">
-          <span className="text">Innovating, </span>
-          <span className="text">Building, </span>
-          <span className="text">Evolving.</span>
+    <>
+      <CustomCursor />
+
+      <div ref={sectionRef}>
+        {/* Loading Screen */}
+        <div className="loading-screen">
+          <div className="text-container">
+            <span className="text">Innovating, </span>
+            <span className="text">Building, </span>
+            <span className="text">Evolving.</span>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className={`main-content ${isLoading ? 'hidden' : 'fade-in'}`}>
+          <Header />
+          <Socmed />
+          <About />
+          <Skill />
+          <Project />
+          <DownloadSection />
+          <Contact />
+          <BackToTop />
         </div>
       </div>
-      <div className={`main-content ${isLoading ? 'hidden' : 'fade-in'}`}>
-        <Header />
-        <Socmed />
-        <About />
-        <Project />
-        <Contact />
-        <BackToTop />
-      </div>
-    </div>
+    </>
   );
 }
 

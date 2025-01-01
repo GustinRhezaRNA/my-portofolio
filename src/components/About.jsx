@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+
 export default function About() {
   const sectionRef = useRef(null);
 
@@ -7,7 +8,7 @@ export default function About() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
-        } else {  
+        } else {
           entry.target.classList.remove('show');
         }
       });
@@ -23,20 +24,17 @@ export default function About() {
   }, []);
 
   return (
-    <>
-      <section
-        ref={sectionRef}
-        id="about"
-        className="container about d-flex"
-      >
-        <div className="content">
-          <div className="judul animate">About Me</div>
-          <p className="isi animate">
-            &mdash; My name is Rheza, and I am a computer science student with a keen interest in web development. I am a passionate and dedicated developer, eager to create innovative and efficient solutions. Throughout my studies, I have
-            gained extensive knowledge in <span>HTML, CSS, JavaScript, React, Bootstrap, Tailwind and Express</span> . Each project I have undertaken has offered valuable insights and experiences, shaping me into the developer I am today.
-          </p>
-        </div>
-      </section>
-    </>
+    <section
+      ref={sectionRef}
+      id="about"
+      className="container about d-flex"
+    >
+      <div className="content">
+        <div className="judul animate">About Me</div>
+        <p className="isi animate">
+          &mdash; I am Rheza, a dedicated computer science student with a passion for web development. My journey has been driven by a commitment to continuous learning and the desire to craft innovative solutions that address real-world challenges. Through hands-on projects, I&apos;ve developed strong <span>problem-solving</span> skills and a <span>versatile skill set</span>, enabling me to tackle diverse development tasks. I&apos;m eager to collaborate and contribute to the ever-evolving field of web development, making a positive impact through my work.
+        </p>
+      </div>
+    </section>
   );
 }
