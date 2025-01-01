@@ -12,7 +12,7 @@ function DownloadSection() {
         <p className=" mb-4">Download my CV to see my skills and experiences in detail.</p>
 
         <a
-          href="public/CV.pdf"
+          href="/CV.pdf"
           download
           className="btn btn-light btn-lg d-inline-flex align-items-center gap-2 px-4 py-2 shadow-sm fw-semibold"
         >
