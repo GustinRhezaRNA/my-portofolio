@@ -3,6 +3,7 @@ import apod from '../assets/a.png';
 import gym from '../assets/b.png';
 import data from '../assets/data.png';
 import manage from '../assets/manage.png';
+import bookwise from '../assets/bookwise.png';
 
 export default function Project() {
   const sectionRef = useRef(null);
@@ -50,6 +51,24 @@ export default function Project() {
             </a>
           </div>
         </div>
+
+        <div className="project-card left d-flex flex-column">
+          <img
+            src={bookwise}
+            className="images"
+            alt="..."
+          />
+          <div className="overlay">
+            <p>Bookwise - University Library</p>
+            <a
+              href="https://bookwise-rheza.vercel.app/"
+              className="quick-view"
+            >
+              Quick View
+            </a>
+          </div>
+        </div>
+
         <div className="project-card right d-flex flex-column">
           <img
             src={gym}
@@ -84,7 +103,7 @@ export default function Project() {
           </div>
         </div> */}
 
-        <div className="project-card left d-flex flex-column">
+        {/* <div className="project-card left d-flex flex-column">
           <img
             src={apod}
             className="images"
@@ -99,7 +118,8 @@ export default function Project() {
               Quick View
             </a>
           </div>
-        </div>
+        </div> */}
+
         <div className="project-card right d-flex flex-column">
           <img
             src={manage}
